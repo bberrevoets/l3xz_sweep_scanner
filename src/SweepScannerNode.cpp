@@ -20,7 +20,7 @@ SweepScannerNode::SweepScannerNode() try
 , _scanner_thread_active{false}
 {
   declare_parameter("topic", "laser");
-  declare_parameter("serial_port", "/dev/ttyUSB0");
+  declare_parameter("serial_port", "/dev/ttyUSB2");
   declare_parameter("rotation_speed", 1);
   declare_parameter("sample_rate", 500);
   declare_parameter("frame_id", "laser_frame");

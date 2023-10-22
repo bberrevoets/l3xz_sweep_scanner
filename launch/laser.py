@@ -11,9 +11,9 @@ def generate_launch_description():
       output='screen',
       parameters=[
           {'topic' : 'laser'},
-          {'serial_port' : '/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DO004CX5-if00-port0'},
+          {'serial_port' : '/dev/ttyUSB2'},
           {'rotation_speed': 1},
-          {'sample_rate': 500},
+          {'sample_rate': 1000},
           {'frame_id' : 'laser_link'}
       ]
     ),
